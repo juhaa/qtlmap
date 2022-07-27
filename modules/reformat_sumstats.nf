@@ -12,7 +12,7 @@ process join_rsids_var_info {
 
     script:
     """
-    $baseDir/bin/join_variant_info.py \\
+    join_variant_info.py \\
         -v $var_info \\
         -r $rsid_map \\
         -o ${var_info.simpleName}.var_info_rsid.tsv.gz
@@ -31,7 +31,7 @@ process reformat_sumstats {
 
     script:
     """
-    $baseDir/bin/join_variant_info.py \
+    join_variant_info.py \
         -s $summ_stats \
         -v $var_info \
         -r $rsid_map \

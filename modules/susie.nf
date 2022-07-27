@@ -10,7 +10,7 @@ process run_susie{
 
     script:
     """
-    Rscript $baseDir/bin/run_susie.R --expression_matrix ${expression_matrix}\
+    run_susie.R --expression_matrix ${expression_matrix}\
      --phenotype_meta ${phenotype_meta}\
      --sample_meta ${sample_meta}\
      --phenotype_list ${phenotype_list}\
@@ -96,7 +96,7 @@ process merge_cs_sumstats{
 
     script:
     """
-    Rscript $baseDir/bin/susie_merge_cs.R --cs_results ${credible_sets}\
+    susie_merge_cs.R --cs_results ${credible_sets}\
      --sumstats ${sumstats}\
      --out ${qtl_subset}.credible_sets.tsv.gz
     """

@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 message(" ## Loading libraries: optparse")
 suppressPackageStartupMessages(library("optparse"))
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 suppressPackageStartupMessages(library("devtools"))
 suppressPackageStartupMessages(library("susieR"))
 suppressPackageStartupMessages(library("stringr"))

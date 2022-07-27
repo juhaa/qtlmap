@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # divide count_matrix according to sample_metadata file of each qtlgroup
 convertDFtoQTLtools <- function(sample_meta_qtlgroup, count_matrix, phenotype_data){
   #Make sure that all required columns are present
